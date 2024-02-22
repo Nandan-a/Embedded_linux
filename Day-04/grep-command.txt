@@ -1,0 +1,69 @@
+Description:
+grep searches for PATTERN in each FILE.
+-------------------------------------------
+Case insensitive search:
+
+grep -i "iot" iot_profile.txt
+
+Displaying the count of number of matches: 
+
+grep -c "iot" iot_profile.txt
+grep -c -i "iot" iot_profile.txt
+
+Display the file names that matches the pattern:
+
+grep -l "iot" *
+
+grep -l "linux" i1.txt i2.txt i3.txt
+
+Checking for the whole words in a file:
+(Discarding substring)
+
+grep -w "iot" iot_profile.txt
+
+Displaying only the matched pattern
+(Discarding the whole line)
+
+grep -o "iot" iot_profile.txt
+
+Inverting the pattern match:
+(lines that doesn't contained the search word in file)
+grep -v "iot" iot_profile.txt
+grep -vn "iot" iot_profile.txt
+Matching the lines that start with a string:
+(^"caret"regular expression pattern specifies the start of a line)
+grep "^iot" iot_profile.txt
+
+Matching the lines that end with a string:
+grep "tomorrow$" iot_profile.txt
+
+some more:
+grep "awesome$" iot_profile.txt
+grep -n "awesome$" iot_profile.txt
+
+grep '[a-zA-Z]'	{any line with at least one letter}
+grep '[^a-zA-Z0-9]	{anything not a letter or number}
+grep '[0-9]\{3\}-[0-9]\{4\}'	{999-9999, like phone numbers}
+grep '^.$'	{lines with exactly one character}
+grep '"smug"'	{'smug' within double quotes}
+grep '"*smug"*'	{'smug', with or without quotes}
+grep '^\.'	{any line that starts with a Period "."}
+grep '^\.[a-z][a-z]'	{line start with "." and 2 lc letters}
+-----------------------------
+grep -v "temp*" temphumi.txt
+cat temphumi.txt 
+grep -v "temp*" temphumi.txt 
+grep -v "temp*" temphumi.txt > humi.txt
+cat humi.txt 
+grep -v "humi*" temphumi.txt > temp.txt
+cat temp.txt
+#listing of process run by root user
+ps -aux | grep -w "root" > testroot.txt
+
+-------------------------------------------
+Grep with Regualr Expressions
+https://www.digitalocean.com/community/tutorials/using-grep-regular-expressions-to-search-for-text-patterns-in-linux
+
+
+
+

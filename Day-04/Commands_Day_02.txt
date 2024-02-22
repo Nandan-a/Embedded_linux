@@ -1,0 +1,125 @@
+#to check Desktop environment
+#major distributions gnome and kde
+>> ls /usr/bin/*session
+
+#get the details about hostname
+
+BHIoT$ hostnamectl
+   Static hostname: iot
+         Icon name: computer-laptop
+           Chassis: laptop
+        Machine ID: c190101c5e314bd7ae8314436d7ee936
+           Boot ID: b3deba26878a40d285764564acddf136
+  Operating System: Ubuntu 20.04.6 LTS
+            Kernel: Linux 5.4.0-146-generic
+      Architecture: x86-64
+----------------------------
+#releaese
+>> lsb_release - print distribution-specific information
+--------------------------------------------------------
+linux standard base
+-------------------------
+>> lsb_release -a
+------------------
+for more information
+>> lsb_release --help
+-----------------------------------------------------------
+#print system specific information
+>> uname
+------------
+#Kernel name
+>> uname -s
+#Node name
+>> uname -n
+>> uname -a #all the details
+#more information
+>> man uname
+#to print hostname
+>> hostname
+#to print effective username/Logged in user
+>> whoami
+#displaying information about USB buses in the system and the devices connected to them.
+>> lsusb
+# displaying information about PCI buses in the system and devices connected to them
+>> lspci
+-----------------------
+Cursor Movement
+----------------------------------------------------------
+up-arrow # to see previous command
+tab - to print remaning words in a command
+-------------------------------------------------------
+#Some more commands
+#displaying calendar
+cal
+#to display the amount of free memory
+free
+#to close a terminal session
+exit
+------------------------------------------------------
+ls -l <nameoffile>  #list specific file
+---------------------------------------
+field explanation
+first field:
+file permission
+    – normal file
+    d : directory
+    s : socket file
+    l : link file
+-rw-r--r--  1 bhupendra bhupendra        60 Aug 28 21:09 ntp-server.txt
+user,group,any/others
+Field 2 – Number of links: (like 1,2,3 depends)
+Field 3 – Owner
+Field 4 – Group
+Field 5 – Size (bytes)
+Field 6 – Last modified date and time
+Field 7 – File name
+ls -a #list all the hidden files and directories
+--------------------------------------------- 
+#to write some content inside a file
+echo 
+echo <somemsg> > <nameoffile> #if file NA on the file is created, overright of data is already available
+echo <somemsg> >> <name of the file> #append contents in a file
+#change permission of the file
+chmmod #change file mode bits
+numeric -
+0 - nothing
+4 -only read
+2 - only write
+1 - only execute
+4+1 = 5 read and execute
+4+2 = 6 read and write both
+4+2+1 = 7 read,write and execute
+chmod 700 a.txt #readwriteexeute to user only
+--------------------------letters
+r -read
+w - write
+x -execute
+u -user
+g -group
+o -other
+-----------------------------------------
+chmod u+rwx a.txt  #user have read write and execute (+ to add) 
+chmod u-rwx a.txt  #user doesn't read write and execute (- to remove)
+---------------------------------------------------------------
+#copy a file
+cp <sourcepath> <destinationpath>
+#move file
+mv <sourcepath> <destinationpath>
+--------------------------------------------------------------------
+mappin og host and IP address:
+
+BHIoT$ cat /etc/hosts
+127.0.0.1	localhost
+127.0.1.1	iot
+127.0.1.2	bhupendra.iot
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+
+
+
+

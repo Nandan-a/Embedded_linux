@@ -1,0 +1,18 @@
+  #Display date and time
+>> date
+#clear and initilize the terminal
+>> tput clear
+>> tput init
+#Calendar
+>> cal 4 2020 
+#How many users are using the system concurrently listing
+>> who
+#Every command we run gives rise to process and shell is
+process as well
+>> ps
+-----------------------
+Note:
+Kernel interacts to the hardware
+shell interacts to the user
+
+----------------------------------------------------------------------

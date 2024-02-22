@@ -1,0 +1,394 @@
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~$ sudo apt install git
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+git is already the newest version (1:2.25.1-1ubuntu3.11).
+0 upgraded, 0 newly installed, 0 to remove and 547 not upgraded.
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~$ sudo apt update  git
+E: The update command takes no arguments
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~$ sudo update  git
+sudo: update: command not found
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~$ sudo update git
+sudo: update: command not found
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   gitrepo/hello.sh
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.bash_history
+	.bash_logout
+	.bashrc
+	.cache/
+	.config/
+	.dbshell
+	.eclipse/
+	.gitconfig
+	.gnome/
+	.gnupg/
+	.hello
+	.ipynb_checkpoints/
+	.ipython/
+	.jupyter/
+	.lesshst
+	.local/
+	.mongorc.js
+	.mozilla/
+	.mysql_history
+	.p2/
+	.pki/
+	.profile
+	.ssh/
+	.sudo_as_admin_successful
+	.swp
+	.swt/
+	.thunderbird/
+	.viminfo
+	230940126008_Nandan.zip
+	230940126008_Nandan/
+	230940126016_SIDDHESH/
+	Database_management/
+	Desktop/
+	Documents/
+	Downloads/
+	Embedded-Linux-Platform/
+	Nandan/
+	Pictures/
+	Python-mySQL.ipynb
+	Syllabus-sept 23/
+	Text.txt/
+	c_project/
+	city.csv
+	eclipse-workspace/
+	eclipse/
+	environments/
+	gitrepo/CMS_web/
+	gitrepo/h.txt
+	gitrepo/hell.c
+	gitrepo/hello.c
+	linux/
+	manager.csv
+	note
+	python-mongodb.ipynb
+	sales.csv
+	snap/
+
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~$ mkdir git-shell
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~$ ls
+ 230940126008_Nandan       eclipse                   hello.c                Python-mySQL.ipynb
+ 230940126008_Nandan.zip   eclipse-workspace         linux                  sales.csv
+ 230940126016_SIDDHESH     Embedded-Linux-Platform   manager.csv            snap
+ city.csv                  environments              Music                  sublime_installation.sh
+ c_project                 gitrepo                   Nandan                'Syllabus-sept 23'
+ Database_management       git-shell                 note                   Templates
+ Desktop                   hello                     Pictures               Text.txt
+ Documents                 Hello                     Public                 Videos
+ Downloads                 hello1                    python-mongodb.ipynb
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~$ cd git
+gitrepo/   git-shell/ 
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~$ cd git-shell/
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   ../gitrepo/hello.sh
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../.bash_history
+	../.bash_logout
+	../.bashrc
+	../.cache/
+	../.config/
+	../.dbshell
+	../.eclipse/
+	../.gitconfig
+	../.gnome/
+	../.gnupg/
+	../.hello
+	../.ipynb_checkpoints/
+	../.ipython/
+	../.jupyter/
+	../.lesshst
+	../.local/
+	../.mongorc.js
+	../.mozilla/
+	../.mysql_history
+	../.p2/
+	../.pki/
+	../.profile
+	../.ssh/
+	../.sudo_as_admin_successful
+	../.swp
+	../.swt/
+	../.thunderbird/
+	../.viminfo
+	../230940126008_Nandan.zip
+	../230940126008_Nandan/
+	../230940126016_SIDDHESH/
+	../Database_management/
+	../Desktop/
+	../Documents/
+	../Downloads/
+	../Embedded-Linux-Platform/
+	../Nandan/
+	../Pictures/
+	../Python-mySQL.ipynb
+	../Syllabus-sept 23/
+	../Text.txt/
+	../c_project/
+	../city.csv
+	../eclipse-workspace/
+	../eclipse/
+	../environments/
+	../gitrepo/CMS_web/
+	../gitrepo/h.txt
+	../gitrepo/hell.c
+	../gitrepo/hello.c
+	../linux/
+	../manager.csv
+	../note
+	../python-mongodb.ipynb
+	../sales.csv
+	../snap/
+
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ ls
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ pwd
+/home/diot/git-shell
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ git init
+Initialized empty Git repository in /home/diot/git-shell/.git/
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ git branch
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ ls
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ git branch -m main
+error: refname refs/heads/master not found
+fatal: Branch rename failed
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ git config --global user.name nandan-a
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ git config --global user.email nandana39790@gmail.com
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ git config --list
+user.name=nandan-a
+user.email=nandana39790@gmail.com
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ cd ..
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/diot/.ssh/id_rsa): 
+/home/diot/.ssh/id_rsa already exists.
+Overwrite (y/n)? y
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/diot/.ssh/id_rsa
+Your public key has been saved in /home/diot/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:FeNap+PpdZvV8TFsQkEUkeiNyWwTIsrM40nNg3eOiMY diot@diot-HP-ProDesk-600-G5-PCI-MT
+The key's randomart image is:
++---[RSA 3072]----+
+|          o +*+  |
+|       . o = ..  |
+|    + = . O *.   |
+|     O = = @...  |
+|  . + = S + .. * |
+|   E + . o o  o *|
+|  .       o . . +|
+|         . . . + |
+|          .   o  |
++----[SHA256]-----+
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~$ cd ~/.ssh
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/.ssh$ ls
+authorized_keys  id_rsa  id_rsa.pub
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/.ssh$ cat id_rsa.pub 
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDS/QfKTRBAMwB+YjOkWBiAKQ5z8gGHJ5JLlO96O9hx0LIEd5CEmIQJoUPVUtWa90hvExiF2e5JeQsSFUvm2wMGnFKdkfK7aXRuxAnsosczbWmFOYtqVzHRFWwNCzQbEFhcQk8voQiq43tMR9pusa6Tupu4qJ7lSjf2nAYUJYmL4ZK8draT5a0RtsNklRbp+jqT2lXpJtJbwB0reQ+kvHiPWVkhUWEvV6WiY5yvS1jZxZRv2ae5NxlQ6/We0gyTIfxIQ/HkvFvrwttwnde59vJws0/gxCDynDebOAe5+8qyt1z+VvgO8+EIluX6Xgq+SesgUHS0afefzDxMaRt1A6r+B7bm3ifMNHvE2qU8h+pdwCcefxwPTaXfVjwzf/NMUq6t0griHQYhQGiDOJlAhnitWsO3LwwpAnIekpT+qZtQtE/rTl/dBzdWQz7VT7wh6/1gji86DvG8P7mYPdb4nBawFPfMY/wKoq8H4l/kUImuuOSsZjJRHqUVKdkWb7Azt3c= diot@diot-HP-ProDesk-600-G5-PCI-MT
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/.ssh$ cd ..
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~$ cd ~/git
+gitrepo/   git-shell/ 
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~$ cd ~/git
+gitrepo/   git-shell/ 
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~$ cd ~/git-shell/
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ ls
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ git pull git@github.com:Nandan-a/SHELL-SCRIPTING.git
+
+
+
+
+^C
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ git pull git@github.com:Nandan-a/SHELL-SCRIPTING.git
+ssh: connect to host github.com port 22: Connection timed out
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ ls
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'origin'
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ cd .git/
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell/.git$ git pull git@github.com:Nandan-a/SHELL-SCRIPTING.git
+fatal: this operation must be run in a work tree
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell/.git$ cd ..
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ git pull https://github.com/Nandan-a/SHELL-SCRIPTING.git
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), 4.49 KiB | 4.49 MiB/s, done.
+From https://github.com/Nandan-a/SHELL-SCRIPTING
+ * branch            HEAD       -> FETCH_HEAD
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ git pull git@github.com:Nandan-a/SHELL-SCRIPTING.git
+^C
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ nano hello.sh
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ git branch
+* master
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ git branch -m main
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ git branch
+* main
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ 
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ ls
+hello.sh  LICENSE  README.md
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ git status
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	hello.sh
+
+nothing added to commit but untracked files present (use "git add" to track)
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ git add .
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   add.sh
+	new file:   arguments.sh
+	new file:   cp.sh
+	new file:   hello.sh
+	new file:   mv.sh
+	new file:   myhelloworld.sh
+
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ git commit -m "My Shell prgm"
+[main 9659106] My Shell prgm
+ 6 files changed, 45 insertions(+)
+ create mode 100644 add.sh
+ create mode 100644 arguments.sh
+ create mode 100644 cp.sh
+ create mode 100644 hello.sh
+ create mode 100644 mv.sh
+ create mode 100644 myhelloworld.sh
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ git remote add origin https://github.com/Nandan-a/SHELL-SCRIPTING.git
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ git push origin main
+Username for 'https://github.com': nandan-a
+Password for 'https://nandan-a@github.com': 
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (8/8), 848 bytes | 848.00 KiB/s, done.
+Total 8 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/Nandan-a/SHELL-SCRIPTING.git
+   b1c16b1..9659106  main -> main
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ git remote add origin https://github.com/Nandan-a/SHELL-SCRIPTING.git
+fatal: remote origin already exists.
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ git push origin main
+Username for 'https://github.com': nandan-a
+Password for 'https://nandan-a@github.com': 
+Everything up-to-date
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ git commit -m "My Shell prgm"
+On branch main
+nothing to commit, working tree clean
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ ls
+add.sh  arguments.sh  cp.sh  hello.sh  LICENSE  mv.sh  myhelloworld.sh  README.md
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ ls -al
+total 52
+drwxrwxr-x  3 diot diot  4096 Oct 17 23:14 .
+drwxr-xr-x 47 diot diot  4096 Oct 17 23:12 ..
+-rw-rw-r--  1 diot diot   327 Oct 17 23:10 add.sh
+-rw-rw-r--  1 diot diot   117 Oct 17 23:10 arguments.sh
+-rw-rw-r--  1 diot diot    90 Oct 17 23:10 cp.sh
+drwxrwxr-x  8 diot diot  4096 Oct 17 23:20 .git
+-rw-rw-r--  1 diot diot    10 Oct 17 23:07 hello.sh
+-rw-rw-r--  1 diot diot 11357 Oct 17 23:06 LICENSE
+-rw-rw-r--  1 diot diot    85 Oct 17 23:10 mv.sh
+-rw-rw-r--  1 diot diot    52 Oct 17 23:10 myhelloworld.sh
+-rw-rw-r--  1 diot diot    24 Oct 17 23:06 README.md
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ git log
+commit 96591066fb5bb64dfedb265abd03065a24f16a0d (HEAD -> main, origin/main)
+Author: nandan-a <nandana39790@gmail.com>
+Date:   Tue Oct 17 23:15:54 2023 +0530
+
+    My Shell prgm
+
+commit b1c16b14119818b242bc33a74e2e35d1891c6370
+Author: Nandan Gowda <107753102+Nandan-a@users.noreply.github.com>
+Date:   Tue Oct 17 22:41:38 2023 +0530
+
+    Initial commit
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ git status
+On branch main
+nothing to commit, working tree clean
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ ls
+add.sh        command_line.sh  cp.sh     LICENSE  myhelloworld.sh  read.sh
+arguments.sh  concat.sh        hello.sh  mv.sh    README.md
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ git add .
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   command_line.sh
+	new file:   concat.sh
+	new file:   read.sh
+
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ git commit -m "Added new file"
+[main 071e4cb] Added new file
+ 3 files changed, 24 insertions(+)
+ create mode 100644 command_line.sh
+ create mode 100644 concat.sh
+ create mode 100644 read.sh
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ git push origin main
+Username for 'https://github.com': nandan-a
+Password for 'https://nandan-a@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/Nandan-a/SHELL-SCRIPTING.git/'
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ git push origin main
+Username for 'https://github.com': nandan-a
+Password for 'https://nandan-a@github.com': 
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 614 bytes | 614.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Nandan-a/SHELL-SCRIPTING.git
+   9659106..071e4cb  main -> main
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ ls
+add.sh        command_line.sh  cp.sh     LICENSE  myhelloworld.sh  read.sh
+arguments.sh  concat.sh        hello.sh  mv.sh    README.md
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ 
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ 
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ 
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ git checkout -b feature
+Switched to a new branch 'feature'
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ ls
+add.sh        command_line.sh  cp.sh     LICENSE  myhelloworld.sh  read.sh
+arguments.sh  concat.sh        hello.sh  mv.sh    README.md
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ git branch
+* feature
+  main
+diot@diot-HP-ProDesk-600-G5-PCI-MT:~/git-shell$ 
+

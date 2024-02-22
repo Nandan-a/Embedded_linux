@@ -1,0 +1,37 @@
+The dpkg tool is basically a package manager for Debian/Debian-based systems.
+
+How to install a package using dpkg?
+
+>> sudo dpkg -i [package-name]   #.deb
+
+for example:
+
+anydesk_5.5.4-1_amd64.deb (anydesk tool)
+
+>> sudo dpkg -i anydesk_5.5.4-1_amd64.deb
+
+How to remove an already installed package using dpkg?
+
+>> dpkg -r [package-name]
+
+e.g >> sudo dpkg -r anydesk 
+
+How to list all installed packages in the system?
+
+>> dpkg -l
+
+How to make dpkg list contents of a package?
+
+>> dpkg --contents [package name]
+
+How to check if a package is installed or not?
+
+>> dpkg -s [package-name]
+
+How to print architecture of packages dpkg installs?
+
+>> dpkg --print-architecture
+
+How to purge a package using dpkg?
+
+>> dpkg -P [package-name]

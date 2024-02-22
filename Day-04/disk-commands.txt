@@ -1,0 +1,71 @@
+#Disk Usage
+du -h
+#Disk Free
+df -h  (Human readable format) #DF - Disk Free
+df -k (Kilo Bytes)
+df -m (megabytes)
+fdisk -l (Disk Partition listing)
+------------------------------------------
+#Display amount of free and used memory in the system
+>> free 
+flags:
+-b :  bytes
+-k : kibibytes. 
+-m : mebibytes.
+-g : gibibytes.
+
+Note: More options can be explored with man page
+e.g. man df
+
+#install gparted
+sudo apt install gparted
+
+BHIoT$ sudo df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev             12G     0   12G   0% /dev
+tmpfs           2.4G  2.4M  2.4G   1% /run
+/dev/sda3       436G  112G  302G  27% /
+tmpfs            12G   19M   12G   1% /dev/shm
+tmpfs           5.0M  4.0K  5.0M   1% /run/lock
+tmpfs            12G     0   12G   0% /sys/fs/cgroup
+/dev/loop2      128K  128K     0 100% /snap/bare/5
+/dev/loop0      286M  286M     0 100% /snap/atom/282
+/dev/loop1      285M  285M     0 100% /snap/atom/286
+/dev/loop3       55M   55M     0 100% /snap/barrier/668
+/dev/loop5      115M  115M     0 100% /snap/core/13741
+/dev/loop4       55M   55M     0 100% /snap/barrier/682
+/dev/loop9       62M   62M     0 100% /snap/core20/1611
+/dev/loop6      115M  115M     0 100% /snap/core/13886
+/dev/loop7       56M   56M     0 100% /snap/core18/2538
+/dev/loop8       56M   56M     0 100% /snap/core18/2566
+/dev/loop11      71M   71M     0 100% /snap/core22/275
+/dev/loop10      64M   64M     0 100% /snap/core20/1623
+/dev/loop12      73M   73M     0 100% /snap/core22/310
+/dev/loop13     163M  163M     0 100% /snap/gnome-3-28-1804/145
+/dev/loop14     141M  141M     0 100% /snap/gnome-3-26-1604/102
+/dev/loop15      52M   52M     0 100% /snap/ffmpeg/821
+/dev/loop16     165M  165M     0 100% /snap/gnome-3-28-1804/161
+/dev/loop18     347M  347M     0 100% /snap/gnome-3-38-2004/119
+/dev/loop19     141M  141M     0 100% /snap/gnome-3-26-1604/104
+/dev/loop20     219M  219M     0 100% /snap/gnome-3-34-1804/77
+/dev/loop17     347M  347M     0 100% /snap/gnome-3-38-2004/115
+/dev/loop21     415M  415M     0 100% /snap/gnome-42-2204/29
+/dev/loop22      81M   81M     0 100% /snap/ffmpeg/1286
+/dev/loop23     219M  219M     0 100% /snap/gnome-3-34-1804/72
+/dev/loop25      92M   92M     0 100% /snap/gtk-common-themes/1535
+/dev/loop24     2.7M  2.7M     0 100% /snap/gnome-system-monitor/178
+/dev/loop27      46M   46M     0 100% /snap/snap-store/592
+/dev/loop26     1.5M  1.5M     0 100% /snap/gnome-system-monitor/181
+/dev/loop28      46M   46M     0 100% /snap/snap-store/599
+/dev/loop29      82M   82M     0 100% /snap/gtk-common-themes/1534
+/dev/nvme0n1p2   95M   36M   60M  38% /boot/efi
+overlay         436G  112G  302G  27% /var/lib/docker/overlay2/45cd97341d1f6e9f128782b5555326cb55de6b1619caf00c1b73d0235a70d1ff/merged
+tmpfs           2.4G  100K  2.4G   1% /run/user/1000
+/dev/sdb1        58G  7.2G   51G  13% /media/bhupendra/UBUNTU 22_0
+BHIoT$ ls -l /dev/sdb1
+brw-rw---- 1 root disk 8, 17 Nov  3 20:39 /dev/sdb1
+
+#contents of the external devices
+
+/media/bhupendra/UBUNTU 22_0
+

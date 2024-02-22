@@ -1,0 +1,13 @@
+Question :1 
+----------------------------------------------------------------------------------------
+Create  a static library for two functions (User Driven) (static library) - .a
+-----------------------------------------------------------------------------------------
+1. should print the fibonacci series of the terms entered by user
+2. should check the entered number is even or odd; number will be entered by USER
+------------------------------------------------------------------------------------------
+Question : 2
+-----------------------------------------------------------------------------------------
+Write a code snippet to create a static library which can be used to 
+print the statement "Embedded Linux is awesome" twice without using printf
+statement twice also any kind of loop is prohibited to use
+------------------------------------------------------------------------------------------
